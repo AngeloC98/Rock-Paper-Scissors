@@ -14,11 +14,11 @@ class GameRepository(context: Context) {
         gameDao = database!!.gameDao()
     }
 
-    suspend fun getAllProducts(): List<Game> = gameDao.getAllGames()
+    suspend fun getAllGames(): List<Game> = gameDao.getAllGames()
 
-    suspend fun insertProduct(game: Game) = gameDao.insertGame(game)
+    suspend fun insertGame(game: Game) = gameDao.insertGame(game)
 
-    suspend fun deleteProduct(game: Game) = gameDao.deleteGame(game)
+    suspend fun deleteGame(game: Game) = gameDao.deleteGame(game)
 
-    suspend fun deleteAllProducts() = gameDao.deleteAllGames()
+    suspend fun deleteAllGames() = gameDao.deleteAllGames()
 }

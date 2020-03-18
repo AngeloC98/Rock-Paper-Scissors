@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
             )
 
             withContext(Dispatchers.IO) {
-                productRepository.insertProduct(game)
+                productRepository.insertGame(game)
             }
         }
     }
